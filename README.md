@@ -1,43 +1,84 @@
-# Astro Starter Kit: Minimal
+# Shahid Aman — Minimal Portfolio (Astro)
 
-```sh
-npm create astro@latest -- --template minimal
+A single‑page, minimalist portfolio inspired by the simplicity of davis7.sh.
+
+- Built with Astro (no JS frameworks, no extra dependencies)
+- Monospace-first typography, subtle grid/baseline, soft radial gradients
+- Data-driven from `src/data/cv.ts`
+- One page only: `src/pages/index.astro`
+
+## Quick start
+
+```bash
+npm install
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- Dev server: http://localhost:4321
+- Production build: `npm run build` (outputs to `dist/`)
+- Preview production build: `npm run preview`
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+## Project structure
 
 ```text
 /
 ├── public/
+│   └── assets/
+│       └── cv.pdf           # Place your resume here (optional)
 ├── src/
+│   ├── data/
+│   │   └── cv.ts            # Profile, links, projects, skills
 │   └── pages/
-│       └── index.astro
-└── package.json
+│       └── index.astro      # Minimal single-page site
+├── package.json
+└── README.md
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Customize
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Most content and links are driven by `src/data/cv.ts`.
 
-Any static assets, like images, can be placed in the `public/` directory.
+- profile.name, location, email, github, linkedin
+- profile.projects[] (name, url, description)
+- profile.skills (languages, frontend, backend, databases, tools, others)
 
-## 🧞 Commands
+Header + nav
 
-All commands are run from the root of the project, from a terminal:
+- Email, GitHub, LinkedIn are rendered from your `cv.ts` links
+- CV link points to `/assets/cv.pdf` and triggers a download (`download="Shahid_Aman.pdf"`)
+  - To enable: place your file at `public/assets/cv.pdf`
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Design knobs (in `src/pages/index.astro`)
 
-## 👀 Want to learn more?
+- Typography: monospace by default (body). Change the `font` declaration on `body { ... }`
+- Lowercase heading: `header h1 { text-transform: lowercase; }`
+- Gradient heading: tweak the color stops in `linear-gradient(90deg, ...)`
+- Subtle grid/baseline: adjust `--grid` variable and the `body::before` overlay
+- Section label: “Stuffs I’ve built” can be renamed in the Projects section header
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Scripts
+
+| Command           | Description                          |
+| ----------------- | ------------------------------------ |
+| `npm install`     | Install dependencies                 |
+| `npm run dev`     | Start dev server                     |
+| `npm run build`   | Build static site to `./dist/`       |
+| `npm run preview` | Preview the production build locally |
+
+## Deployment
+
+The site is fully static. Deploy the contents of `dist/` to any static host.
+
+- Vercel / Netlify / Cloudflare Pages: set build command to `npm run build`, output dir `dist/`
+- GitHub Pages or any static host: run `npm run build` and upload `dist/`
+
+## Tech
+
+- Astro ^5 — no client-side frameworks, no extra packages
+- Inline CSS for minimal footprint and fast first paint
+
+## Notes
+
+- Dark mode supported via `prefers-color-scheme`
+- No analytics, no fonts loaded from the network by default
+- Keep it minimal; add sections/components only if you need them
