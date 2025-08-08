@@ -67,6 +67,11 @@ export const profile = {
       url: "https://pdfninja.sham1.dev",
       description: "Simple tool to quickly manipulate PDF files",
     },
+    {
+      name: "Blocks",
+      url: "https://blocks.sham1.dev",
+      description: "The JSON 'Database' for your projects",
+    },
   ],
   skills: {
     languages: ["JavaScript/TypeScript", "Golang", "SQL", "GraphQL", "Python"],
