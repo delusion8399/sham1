@@ -1,0 +1,101 @@
+export const profile = {
+  name: "Shahid Aman",
+  location: "Hyderabad, India",
+  phone: "+91-6393913014",
+  email: "shahidaman8399@gmail.com",
+  linkedin: "https://linkedin.com/in/delusion8399",
+  github: "https://github.com/delusion8399",
+  website: "https://sham1.dev",
+  summary:
+    "A highly skilled software engineer with extensive experience in building scalable, real-time, and enterprise-grade web applications. Proven track record across SaaS, POS, and employee engagement domains with expertise in modern technologies and cloud infrastructure.",
+  education: [
+    {
+      school: "I.E.T Dr RML Awadh University",
+      period: "Aug 2019 – Jul 2023",
+      degree: "B.Tech, Computer Science & Engineering",
+    },
+  ],
+  experience: [
+    {
+      title: "Software Developer",
+      company: "Tiso Studio Pvt Ltd, Hyderabad",
+      period: "Dec 2023 – Present",
+      bullets: [
+        "Led ZATCA Phase 2 e‑invoicing implementation with XML generation, digital signing, QR codes, and real‑time tax authority reporting; processed ~800,000 invoices over 8–9 months.",
+        "Developed offline‑first React Native POS with multi‑location inventory, order routing, and kitchen display systems.",
+        "Engineered MongoDB CDC + Kafka pipelines for real‑time sync across distributed POS devices with conflict resolution and offline support.",
+        "Built QuestDB‑based analytics with CDC integration for sub‑second BI queries and real‑time dashboards.",
+        "Created hardware drivers for thermal printers, barcode scanners, and cash drawers with custom device protocols.",
+        "Developed a high‑performance Go migration tool to move 10M+ records from MongoDB to PostgreSQL with integrity and minimal downtime.",
+        "Built a Go microservice to convert USDZ to GLB 3D models for cross‑platform compatibility and optimized rendering.",
+        "Architected DevOps for microservices with multi‑env CI/CD (GitLab CI/CD, GitHub Actions), automated Docker, OCI registry, and Kubernetes orchestration across dev/test/QA/prod for 9+ services.",
+      ],
+    },
+    {
+      title: "Full Stack Engineer",
+      company: "Biteheist LLC (Remote)",
+      period: "Jan 2022 – Dec 2023",
+      bullets: [
+        "Built full‑stack food ordering with real‑time menu customization, multi‑channel ordering, and location management.",
+        "Designed drag‑and‑drop menu builder with dynamic pricing, tax engines, loyalty, and reporting dashboards.",
+        "Integrated payment gateways (Stripe, Authorize.Net, Jupiter, Tilled) with secure tokenization and reconciliation.",
+        "Implemented infra with MongoDB, Redis caching, AWS S3, and third‑party integrations for delivery platforms and POS.",
+        "Developed real‑time order tracking with SMS, GPS, and automated comms workflows.",
+      ],
+    },
+    {
+      title: "Full Stack Engineer",
+      company: "CAREit Human Technology (Remote)",
+      period: "Jan 2021 – Jan 2022",
+      bullets: [
+        "Developed enterprise SaaS CAREit for employee engagement with multi‑tenant architecture.",
+        "Implemented real‑time chat/broadcast via Socket.IO with presence, groups, and notifications.",
+        "Built recognition modules with point systems, contests, raffles, and automated rewards.",
+        "Integrated goals, surveys, shift planning, announcements with RBAC.",
+        "Designed scalable backend with MongoDB, Redis, GraphQL, and microservices for thousands of concurrent users.",
+      ],
+    },
+  ],
+  projects: [
+    {
+      name: "GoQuery",
+      url: "https://goquery.sham1.dev",
+      description: "AI-powered natural language to SQL query platform",
+    },
+    {
+      name: "PDFNinja",
+      url: "https://pdfninja.sham1.dev",
+      description: "Simple tool to quickly manipulate PDF files",
+    },
+  ],
+  skills: {
+    languages: ["JavaScript/TypeScript", "Golang", "SQL", "GraphQL", "Python"],
+    frontend: ["React.js", "Next.js", "SvelteKit", "React Native"],
+    backend: ["Node.js", "Express.js", "Nest.js", "GoFiber", "Echo"],
+    databases: ["MongoDB", "PostgreSQL", "QuestDB", "Redis", "MySQL"],
+    tools: [
+      "Docker",
+      "Kubernetes",
+      "Git",
+      "GitHub Actions",
+      "GitLab CI/CD",
+      "PM2",
+    ],
+    others: [
+      "REST",
+      "WebSockets",
+      "LLM APIs",
+      "Microservices",
+      "CI/CD",
+      "PDF automation",
+      "AWS",
+      "Firebase",
+    ],
+  },
+  courses: [
+    "Scrimba - The Frontend Developer Career Path",
+    "The Complete Bootcamp 2021",
+  ],
+  languages: ["English", "Hindi"],
+  interests: ["AI/ML", "Web3", "SaaS Architectures", "Cloud Computing"],
+};
