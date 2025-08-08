@@ -65,7 +65,7 @@ export const profile = {
     {
       name: "PDFNinja",
       url: "https://pdfninja.sham1.dev",
-      description: "Simple tool to quickly manipulate PDF files",
+      description: "Simple tools to quickly manipulate PDF files",
     },
     {
       name: "Blocks",
