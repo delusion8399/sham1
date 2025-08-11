@@ -7,7 +7,7 @@ export const profile = {
   github: "https://github.com/delusion8399",
   website: "https://sham1.dev",
   summary:
-    "A highly skilled software engineer with extensive experience in building scalable, real-time, and enterprise-grade web applications. Proven track record across SaaS, POS, and employee engagement domains with expertise in modern technologies and cloud infrastructure.",
+    "A passionate software engineer with extensive experience in building scalable, real-time, and enterprise-grade web applications. Proven track record across SaaS, POS, and employee engagement domains with expertise in modern technologies and cloud infrastructure.",
   education: [
     {
       school: "I.E.T Dr RML Awadh University",
