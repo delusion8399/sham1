@@ -58,6 +58,12 @@ export const profile = {
   ],
   projects: [
     {
+      name: "PDF to JSON",
+      url: "https://pdftojson.sham1.dev",
+      description:
+        "Transform reports, invoices, and documents into clean JSON without manual cleanup. Fast, accurate, and built for production pipelines.",
+    },
+    {
       name: "GoQuery",
       url: "https://goquery.sham1.dev",
       description: "AI-powered natural language to SQL query platform",
